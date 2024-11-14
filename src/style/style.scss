@@ -2,6 +2,7 @@
 @use "../helpers/variables" as v;
 
 @use "./topbar/topbar";
+@use "./sidebar/sidebar";
 
 *,
 *::before,
