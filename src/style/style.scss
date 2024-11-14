@@ -3,6 +3,7 @@
 
 @use "./topbar/topbar";
 @use "./sidebar/sidebar";
+@use "./content/content";
 
 *,
 *::before,
@@ -40,4 +41,14 @@ html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+.dashboard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar topbar"
+    "sidebar main";
 }

@@ -75,84 +75,99 @@
   </head>
 
   <body>
-    <!-- header navbar -->
-    <header class="app-header">
-      <div class="app-header-navigation">
-        <div class="dashboard-submenu submenu">
-          <a href="/dashboard">Overview</a>
-          <a href="/dashboard">Payments</a>
-          <a href="/dashboard">Cards</a>
-          <a href="/dashboard">Account</a>
+    <main class="dashboard">
+      <!-- header navbar -->
+      <header class="topbar">
+        <div class="app-header">
+          <div class="app-header-navigation">
+            <div class="dashboard-submenu submenu">
+              <a href="/dashboard">Overview</a>
+              <a href="/dashboard">Payments</a>
+              <a href="/dashboard">Cards</a>
+              <a href="/dashboard">Account</a>
+            </div>
+            <div
+              class="management-product-submenu submenu"
+              style="display: none"
+            >
+              <a href="/management-product">
+                <span class="material-symbols-outlined"> package_2 </span>
+                <span> Products</span>
+              </a>
+              <div class="submenu-item">
+                <a href="/management-product/categories">
+                  <span class="material-symbols-outlined"> category </span>
+                  <span class="text"> Categories </span>
+                </a>
+              </div>
+            </div>
+            <div class="map-submenu submenu">
+              <a href="/map">Map</a>
+            </div>
+          </div>
+          <div class="app-header-actions">
+            <div class="user-profile">
+              <span class="text">Matheo Peterson</span>
+              <div class="image">
+                <img
+                  src="https://assets.codepen.io/285131/almeria-avatar.jpeg"
+                />
+              </div>
+            </div>
+            <div class="app-header-actions">
+              <div class="icon-button">
+                <i class="ph ph-magnifying-glass"></i>
+              </div>
+              <div class="icon-button">
+                <i class="ph ph-bell"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="management-product-submenu submenu" style="display: none">
-          <a href="/management-product">
-            <span class="material-symbols-outlined"> package_2 </span>
-            <span> Products</span>
-          </a>
-          <div class="submenu-item">
-            <a href="/management-product/categories">
-              <span class="material-symbols-outlined"> category </span>
-              <span class="text"> Categories </span>
+      </header>
+
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <div class="navigation">
+          <div class="navigation-logo">
+            <a href="/" class="nav-logo">
+              <img src="/assets/img/logos/logo-fix.png" alt="GoBiz Logo" />
+              <span>obiz</span>
+            </a>
+            <span class="material-symbols-outlined"> left_panel_close </span>
+          </div>
+
+          <div class="navigation-nav">
+            <a
+              href="/dashboard"
+              data-menu="dashboard"
+              class="menu-item to-link"
+            >
+              <i class="ph ph-gauge"></i>
+              <span>Dashboard</span>
+            </a>
+            <a
+              href="/management-product"
+              data-menu="management-product"
+              class="menu-item to-link"
+            >
+              <i class="ph ph-storefront"></i>
+              <span>Management Product</span>
+            </a>
+            <a href="/map" data-menu="map" class="menu-item to-link">
+              <i class="ph ph-map-pin-area"></i>
+              <span>Map</span>
+            </a>
+            <a class="logout" href="#">
+              <i class="ph ph-sign-out"></i>
+              <span>Logout</span>
             </a>
           </div>
         </div>
-        <div class="map-submenu submenu">
-          <a href="/map">Map</a>
-        </div>
-      </div>
-      <div class="app-header-actions">
-        <div class="user-profile">
-          <span class="text">Matheo Peterson</span>
-          <div class="image">
-            <img src="https://assets.codepen.io/285131/almeria-avatar.jpeg" />
-          </div>
-        </div>
-        <div class="app-header-actions">
-          <div class="icon-button">
-            <i class="ph ph-magnifying-glass"></i>
-          </div>
-          <div class="icon-button">
-            <i class="ph ph-bell"></i>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- sidebar -->
-    <aside class="navigation">
-        <div class="navigation-logo">
-          <a href="/" class="nav-logo">
-            <img src="/assets/img/logos/logo-fix.png" alt="GoBiz Logo" />
-            <span>obiz</span>
-          </a>
-          <span class="material-symbols-outlined"> left_panel_close </span>
-        </div>
-      
-        <div class="navigation-nav">
-          <a href="/dashboard" data-menu="dashboard" class="menu-item to-link">
-            <i class="ph ph-gauge"></i>
-            <span>Dashboard</span>
-          </a>
-          <a
-            href="/management-product"
-            data-menu="management-product"
-            class="menu-item to-link"
-          >
-            <i class="ph ph-storefront"></i>
-            <span>Management Product</span>
-          </a>
-          <a href="/map" data-menu="map" class="menu-item to-link">
-            <i class="ph ph-map-pin-area"></i>
-            <span>Map</span>
-          </a>
-          <a class="logout" href="#">
-            <i class="ph ph-sign-out"></i>
-            <span>Logout</span>
-          </a>
-        </div>
       </aside>
 
-      
+      <section class="content">hello world</section>
+    </main>
     <!-- package -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
